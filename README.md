@@ -1,79 +1,57 @@
-# LLM Pipeline Explorer 🚀
+# LatentStudio 🔬
 
-An interactive web application exploring how Large Language Models (LLMs) transform raw natural language text into tokens, high-dimensional vector embeddings, and 3D geometric projections.
+**Interactive LLM Tokenization, High-Dimensional Vector Embeddings & 3D Latent Space Explorer**
 
-Inspired by and built as a faithful enhancement of the LLM Pipeline Explorer.
-
-![LLM Pipeline Explorer](https://img.shields.io/badge/Made%20with-Vanilla%20HTML%20%2F%20JS-blue)
-![Plotly](https://img.shields.io/badge/3D%20Graphics-Plotly.js-orange)
-## 🌐 Live Demos
-
-- **Live on Vercel:** [https://sonic-nova-det20cw.tmp.now](https://sonic-nova-det20cw.tmp.now) *(Claim link provided below to link to your permanent Vercel account)*
-- **Live on GitHub Pages:** [https://khushvindarjat.github.io/llm-pipeline-explorer/](https://khushvindarjat.github.io/llm-pipeline-explorer/)
-- **GitHub Repository:** [https://github.com/khushvindarjat/llm-pipeline-explorer](https://github.com/khushvindarjat/llm-pipeline-explorer)
+A self-contained web laboratory exploring how Large Language Models (LLMs) turn raw natural language into subwords, continuous vectors, and geometric semantic projections.
 
 ---
 
-## 🌟 Features
+## 🌟 What Makes This Distinct
 
-1. **Subword BPE Tokenizer**:
-   - Dynamic vocabulary extraction from arbitrary training corpora with word frequency calculation.
-   - Interactive vocabulary size slider: shrink vocabulary to watch out-of-vocabulary words break down into subwords (prefixed with `##`) and individual characters.
-   - Visual colored token chips with unique integer token IDs and compression ratio (`characters / token`).
-   - Special `[UNK]` handling for unmapped tokens.
-
-2. **64-Dimensional Trigram Sentence Embeddings**:
-   - Computes L2-normalized 64-dimensional character trigram vectors using deterministic hashing.
-   - Pairwise Cosine Similarity matrix calculation for all input sentences.
-
-3. **In-Browser 3D PCA Projection**:
-   - Implements Principal Component Analysis directly in JavaScript:
-     - Mean-centering
-     - Covariance matrix computation
-     - Power iteration with deflation to extract top 3 eigenvectors
-   - High-performance interactive 3D scatter plot using Plotly (rotate, zoom, pan, hover tooltips).
-
-4. **Interactive Sentence Tracer**:
-   - Type any custom sentence or word to follow its step-by-step path:
-     - **Step 1:** Subword tokenization and ID assignment.
-     - **Step 2:** 64-D vector spectrum visualization and preview.
-     - **Step 3:** Dynamic projection into 3D space as an orange diamond with nearest neighbor similarity ranking.
-
-5. **Modern Polished UI**:
-   - Single-file `index.html` with zero build step.
-   - Dark mode & Light mode support.
-   - Preset buttons for quick testing.
+- **Modern Studio Interface**: Sleek tabbed workspace dividing the workflow into **1. Tokenizer & Subword Engine**, **2. 3D Latent Space & Clusters**, and **3. Custom Sentence Tracer**.
+- **Fresh Multi-Domain Corpus**: Real-world knowledge bases spanning Deep Learning & AI, Astrophysics, Marine Biology, and Philosophy.
+- **In-Browser 3D Projection**: Custom PCA (Principal Component Analysis) implementation running purely in client-side JavaScript, rendered with Plotly.js.
+- **Single-File Architecture**: Everything is contained in [`index.html`](index.html) with zero build systems or node dependencies needed.
 
 ---
 
-## 💻 Quick Start
+## 🚀 How to Run Locally
 
 Simply open `index.html` in any web browser!
 
-Or serve locally with any static server:
+Or spin up a local server:
 ```bash
-# Using Python
+# Python
 python3 -m http.server 3000
 
-# Using Node.js npx
+# Node / NPX
 npx serve .
 ```
-
-Open `http://localhost:3000` in your browser.
+Then visit `http://localhost:3000`.
 
 ---
 
-## 🚀 Deployment
+## 📦 How to Deploy It Yourself
 
-### Deploy to Vercel
+Because `index.html` is completely static and self-contained, you can deploy it to any hosting platform in seconds:
 
-You can deploy directly using Vercel CLI:
-```bash
-npx vercel
-```
-Or connect this GitHub repository in your [Vercel Dashboard](https://vercel.com/new).
+### Option 1: Vercel
+1. Install Vercel CLI or visit [vercel.com](https://vercel.com).
+2. Run in this directory:
+   ```bash
+   vercel
+   ```
+   Or import this repository directly in your Vercel Dashboard.
+
+### Option 2: GitHub Pages
+1. Go to your repository **Settings** → **Pages**.
+2. Under **Build and deployment**, select `Deploy from a branch` (Branch: `main`, Folder: `/ (root)`).
+3. Click **Save**.
+
+### Option 3: Netlify / Cloudflare Pages
+Drag and drop this folder into the Netlify or Cloudflare Pages web interface.
 
 ---
 
 ## 📄 License
-MIT License
+MIT
