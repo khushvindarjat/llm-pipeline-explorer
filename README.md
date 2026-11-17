@@ -6,7 +6,11 @@ Inspired by and built as a faithful enhancement of the LLM Pipeline Explorer.
 
 ![LLM Pipeline Explorer](https://img.shields.io/badge/Made%20with-Vanilla%20HTML%20%2F%20JS-blue)
 ![Plotly](https://img.shields.io/badge/3D%20Graphics-Plotly.js-orange)
-![Deployable](https://img.shields.io/badge/Deploy-Vercel%20%7C%20GitHub%20Pages-green)
+## 🌐 Live Demos
+
+- **Live on Vercel:** [https://sonic-nova-det20cw.tmp.now](https://sonic-nova-det20cw.tmp.now) *(Claim link provided below to link to your permanent Vercel account)*
+- **Live on GitHub Pages:** [https://khushvindarjat.github.io/llm-pipeline-explorer/](https://khushvindarjat.github.io/llm-pipeline-explorer/)
+- **GitHub Repository:** [https://github.com/khushvindarjat/llm-pipeline-explorer](https://github.com/khushvindarjat/llm-pipeline-explorer)
 
 ---
 
